@@ -1,0 +1,99 @@
+
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.35);
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__dialog{
+    padding: 24px;
+    background: rgb(243, 237, 247);
+    border-radius: 24px;
+    width: 100%;
+    max-width: 312px;
+    transition-delay: .5s;
+    transition: .5s;
+    transform: scale(0);
+    transform-origin: top;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal__dialog.active{
+    transform: scale(1);
+}
+
+.modal__dialog-title{
+    color: rgb(28, 27, 31);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.modal__dialog label{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px 4px 0px 0px;
+    background: rgb(231, 224, 236);
+    border-bottom: 1px solid black;
+    padding: 8px 16px;
+}
+
+.modal__dialog input{
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.modal__dialog input{
+    color: rgb(0, 0, 0);
+}
+
+.modal__dialog label span{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.modal__dialog-btns{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.modal__dialog-btn-item{
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.modal__dialog-btn-item.cancel{
+    color: rgb(207, 27, 27);
+}
+.modal__dialog-btn-item.send{
+    color: rgb(103, 80, 164);
+}

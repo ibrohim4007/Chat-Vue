@@ -1,0 +1,33 @@
+
+.nav{
+    background: rgb(50, 50, 50);
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 20px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+.nav__title{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__title h1{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.nav__title p{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+}
